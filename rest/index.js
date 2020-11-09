@@ -11,3 +11,11 @@ function concat(separator, ...spellStrings) {
 }
 
 concat('-', 'T', 'O', 'K', 'U', 'D', 'A');
+
+// concat arrays
+function concatArray (...arrays) {
+    console.log(arrays.reduce( (a,b) => a.concat(b)));
+}
+var arrA = [1,2,3];
+var arrB = [4,5,6];
+concatArray(arrA,arrB);
